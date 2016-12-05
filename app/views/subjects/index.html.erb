@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Subjects</h1>
+
+<ol>
+    <% @subjects.each do |subject| %>
+        
+          <li><%= subject.name %></li>
+         
+        <!--<td><%= subject.faculty %></td>-->
+        <!--<td><%= link_to 'Show', subject %></td>-->
+        <!--<td><%= link_to 'Edit', edit_subject_path(subject) %></td>-->
+        <!--<td><%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+    <% end %>
+ </ol>
+
+<br>
+
+<%= link_to 'New Subject', new_subject_path %>
